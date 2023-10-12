@@ -1,9 +1,9 @@
-provider "aws" {
-  region = "us-east-1"
+ provider "aws" {
+  region = "us-east-2"
 }
 
 resource "aws_instance" "demo-server" {
-    ami = "ami-022e1a32d3f742bd8"
+    ami = "ami-036f5574583e16426"
     instance_type = "t2.micro"
-    key_name = "dpp"
+    key_name = "DevOps_Project_Key"
 }
